@@ -22,13 +22,37 @@ The application would provide a range of visual prompts to assist the staff memb
 
 ### Scope
 
+The project deliverables are as follows:
+
+**Development of a terminal application (Ruby)**, with the following functionality:
+
+- Persistent storage of students and classes
+- Look-up students using their student identifier (SID)
+- Student profile display, containing their SID, full name, educational program, currently enrolled classes and recommended units
+- Ability to add or remove classes from student profiles
+- Class list display, containing all classes and their current occupancy
+- Effective validation and error handling in respect of user operations
+- Provision of clear user prompts
+
 <br>
 
-### Target Audience
+### Out of Scope
+
+The project deliverables do not include the following:
+
+- Any features or operations not listed in the aforementioned project deliverables
 
 <br>
 
 ### Features
+
+The proposed terminal application will include the following features:
+
+- **Look-up and display of student enrolment profiles, which derive data from persistent storage** <br>Students and their associated data will be contained within a persistent file on the application. This will enable a permanent digital record of their student identifier, full name, educational program and the current state of their enrolment. When the user looks up a student, they will be presented with a concise display of all the student’s details and prompts for changing their enrolment. As SIDs are in a consistent numerical format, the application will perform validation on the user’s entered characters.
+
+- **Display of all available classes and their current occupancy, which derive data from persistent storage** <br> Each class will be stored within a persistent file on the application and will contain a list of currently enrolled students. When the user accesses the class display, they will be presented with a list of all available units and the current number of occupants, which will be colourised based upon how many places remain in the class. Selecting a class from that list will display the full list of students who have enrolled in that class.
+
+- **Ability to add or remove classes from student profiles** <br> Through the student enrolment profile display, the user will be able to add or remove classes from any given student. These operations will have a range of validation checks and user prompts to ensure the student isn’t already: enrolled in the requested unit or enrolled in the maximum number of credits.
 
 <br>
 
