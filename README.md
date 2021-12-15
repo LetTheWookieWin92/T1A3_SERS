@@ -104,6 +104,11 @@ The user will be prompted on how to use each feature below as follows:
 
 ## Implementation Plan
 
+This project was planned and implemented using Trello, a project management workspace. The workspace for this project can be found <a href="https://trello.com/invite/b/fOSkJ9sx/25a0cdee1b504047b73bdd3d462c7fc0/t1a3-terminal-application">here</a>.
+
+<br>
+**Insert screenshots**
+
 <br>
 
 ## User Help Documentation
