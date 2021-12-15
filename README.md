@@ -58,6 +58,44 @@ The proposed terminal application will include the following features:
 
 ### User Interaction and Experience
 
+Upon entering the application, the user will be presented with a home page, which will provide an overview of the features of the system and prompt them to select an action they wish to take; search for students or view the class lists. The user will select an option using numerical keys.
+
+The user will be prompted on how to use each feature below as follows:
+
+- **Look-up and display of student enrolment profiles**
+
+  This feature option will be displayed on the home screen when the user enters the application. Selecting the option will take the user to a new display, where they are prompted to select one of the available programs of study from a list of options e.g. Engineering or Science by using numerical keys. Once selected, the user will be presented with the numbered list of students who are on that program, each of whom will have visual indicators depending on their state of enrolment. For example, a student who is fully enrolled will be indicated in green. The user will be able to select students using numerical keys, after which they will be presented with that student’s profile. The profile will contain the student’s personal details, their enrolled classes and a prompt indicating any action that needs to occur. For example, if a student is enrolled in only 2 subjects, the display will prompt the user to enrol the student in 2 more units.
+
+  There are a number of errors that could occur whilst the user navigates the student search interface:
+
+  - The application is unable to find any programs in the persistent storage; Programs.json, which contains all of the available programs of study. A message would be displayed to the user notifying them that no programs are currently available, and provide them an option to return them to the home page.
+
+  - The application is unable to find any students on a particular program, in the persistent storage; Students.json, which contains all of the students and their associated information. In this case, a message would be displayed to the user notifying them that there are no students on that program of study, and provide them an option to return to the student search.
+
+  - The application is unable to find the selected student within the Students.json file, and so cannot present the student profile. In this situation, the application will display a message to the user notifying them that the student could not be found, and provide them an option to return to the student list.
+
+- **Display of all available classes and their current occupancy**
+
+  This feature option will be displayed on the home screen when the user enters the application. Selecting the option will take the user to a new display, where they are prompted to select one of the available programs of study from a list of options e.g. Science or Business by using numerical keys. Once selected, the user will be presented with the numbered list of classes that are available are on that program, each of whom will have visual indicators depending on their state of occupancy. For example, a class that is full will be indicated in red. The user will be able to select classes using numerical keys, after which they will be presented with the list of students that are enrolled in that class and a message indicating the number of students and available place, and an option to go back to the class list.
+
+  There are a number of errors that could occur whilst the user navigates the class lists interface:
+
+  - The application is unable to find any programs in the persistent storage; Programs.json, which contains all of the available programs of study. A message would be displayed to the user notifying them that no programs are currently available, and provide them an option to return them to the home page.
+
+  - The application is unable to find any classes for a particular program, in the persistent storage; Classes.json, which contains all of the available classes and their associated information. In this case, a message would be displayed to the user notifying them that there are no classes available on that program of study, and provide them an option to return to the class lists.
+
+  - The application is unable to find the selected class within the Classes.json file, and so cannot present the class list. In this situation, the application will display a message to the user notifying them that the class could not be found, and provide them an option to return to the list of classes.
+
+- **Ability to add or remove classes from student profiles**
+
+  This feature option will be presented on the student profile display as “Amend student enrolment”. If the user selects this option, they will be prompted to pick whether they wish to add classes or remove classes, using numerical keys. If they choose to remove existing classes, they will be presented with a list of currently enrolled classes and instructions for selecting which one should be removed. If they choose to add a new class, they will be presented with a list of available classes for that student’s program of study, less the subjects they are already enrolled into. The user can indicate which class to add or cancel the operation using numerical keys.
+
+  There are a number of errors that could occur whilst the user attempts to add or remove classes from student profiles:
+
+  - The application is unable to save the changes to the Students.json and Classes.json, in the persistent storage. In this case, the application would reattempt the operation and if it still does not work, the user will be presented with an error message, and an option to go back to the student profile.
+
+  - The user may attempt to add more classes to a student when they are already at the full 24 credit limit. This should be prevented by not presenting the option to add classes when the student is already at the limit, but if not the user will be presented with an error message, and an option to go back.
+
 <br>
 
 ### Control Flow
