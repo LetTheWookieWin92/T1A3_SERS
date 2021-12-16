@@ -14,6 +14,38 @@ def getStudent(input_SID)
     return found_student
 end 
 
+def getClass(input_class_code)
+    
+    # Read the Classes.json file
+    classesJSON = File.read("./data/classes.json")
+
+    # Parse the JSON into a hash
+    classesHash = JSON.parse(classesJSON)
+
+    # Look for inputted SID amongst list of students
+    found_class = classesHash.find { |classItem| classItem["code"] == input_class_code }
+
+    # Return student
+    return found_class
+end 
+
+def getClasses(program_name)
+    # Get permitted classes from progam
+    program = getProgram(program_name)
+
+    # Get permitted classes from program's permitted classes
+    permitted_classes = program["permitted_classes"]
+
+    # For each permitted class, retreive the class details from classes.json
+    filteredClasses = Array.new
+    permitted_classes.each do |classItem| 
+        # Add to end of array
+        filteredClasses.push(getClass(classItem))
+    end
+    
+    return filteredClasses
+end
+
 
 # Look up method, which accepts a program name as an input and returns the program hash
 def getProgram(program_name)

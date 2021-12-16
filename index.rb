@@ -8,7 +8,12 @@ require_relative './validation.rb'
 # Initialise the user input variable and clear terminal
 system 'clear'
 displayMode = "Home" 
-availableOptions = 2
+
+# Different menus have different numbers of options, this hash provides a means to look up how many options there are (DRY-er than keeping track of it throughout the script)
+availableOptions = { "Home" => 2,  "Program Selection - Class Lists" => 5 }
+
+programs = 
+
 input = ""
 
 
@@ -45,7 +50,6 @@ while input != "exit"
                     system 'clear'
                     input = ""
                     displayMode = "Program Selection - Class Lists"
-                    availableOptions = 5
 
                     puts "SERS > Class lists"
                     puts "Please select a program to display available classes"
@@ -59,7 +63,6 @@ while input != "exit"
 
                 # Default 
                 else
-                    availableOptions = 2
                     system 'clear'
                     # Prints the welcome message
                     puts "Welcome to the Student Enrolment System (SERS)"
@@ -90,14 +93,42 @@ while input != "exit"
                     puts "Invalid option. Please enter one of the numerical options above"                    
                 
                 when 1
+                    system 'clear'
+                   
+                    puts "SERS > Class lists > Psychology"
+                    puts "The following Psychology classes are available. Select one to view the class list"
+                    puts  
 
+                    classes = getClasses("Psychology")
+                    optionNumber = 1
+                    classes.each do |classItem| 
+                        
+                        puts "[" + optionNumber.to_s + "] " + classItem["code"] + " " + classItem["name"] + " (Occupants: " + classItem["occupants"].count.to_s + "/20)"
+                        optionNumber = optionNumber + 1
+                    end
 
-                
-                when 2
+                    input = ""
+                    displayMode = "Program classes"
 
+                # Go back
+                when 5
+                    system 'clear'
+                    input = ""
+                    displayMode = "Home"
+
+                    puts "Welcome to the Student Enrolment System (SERS)"
+                    puts "This application allows you to view and amend the enrolment status of any student at the institution, as well as the current occupancy of any available classes."
+                    puts
+                    puts "What would you like to do? Use your numerical keys to select an option"
+                    puts
+                    puts "[1] Search for students"
+                    puts "[2] View the class lists"
+                    puts
 
                 # Default 
                 else
+                    system 'clear'
+
                     puts "SERS > Class lists"
                     puts "Please select a program to display available classes"
                     puts
@@ -113,9 +144,9 @@ while input != "exit"
     end
 
 
-    puts "availableOptions: #{availableOptions}"
+
     # Get user input
-    input = validate_option_selection(gets, availableOptions)
+    input = validate_option_selection(gets, availableOptions[displayMode])
 end
 
 system 'clear'
