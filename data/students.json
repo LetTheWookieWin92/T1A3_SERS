@@ -1,0 +1,47 @@
+[
+  {
+    "SID": "13245",
+    "name": "Barney Stinson",
+    "enrolment": [
+      "PSYC3849",
+      "PSYC1829"
+    ],
+    "program": "Psychology"
+  },
+  {
+    "SID": "54862",
+    "name": "Ted Mosby",
+    "enrolment": [
+      "SCIE3086"
+    ],
+    "program": "Science"
+  },
+  {
+    "SID": "86735",
+    "name": "Lily Aldrin",
+    "enrolment": [
+      "ENGI5364",
+      "ENGI1923"
+    ],
+    "program": "Engineering"
+  },
+  {
+    "SID": "48392",
+    "name": "Robin Scherbatsky",
+    "enrolment": [
+      "BUSI3948",
+      "BUSI7593",
+      "BUSI7384",
+      "BUSI3879"
+    ],
+    "program": "Business"
+  },
+  {
+    "SID": "38567",
+    "name": "Marshall Eriksen",
+    "enrolment": [
+      "ENGI5364"
+    ],
+    "program": "Engineering"
+  }
+ ]
