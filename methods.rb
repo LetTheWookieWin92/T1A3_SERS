@@ -14,6 +14,27 @@ def getStudent(input_SID)
     return found_student
 end 
 
+def getStudents(program_name)
+    
+    # Read the Students.json file
+    studentsJSON = File.read("./data/students.json")
+
+    # Parse the JSON into a hash
+    studentsHash = JSON.parse(studentsJSON)
+
+    # Filter students by program
+    filteredStudents = Array.new
+    studentsHash.each do |student| 
+        # If program matches, add to end of filtered array
+        if student["program"] == program_name
+            filteredStudents.push(student)
+        else
+        end
+    end
+
+    return filteredStudents
+end
+
 def getClass(input_class_code)
     
     # Read the Classes.json file
@@ -42,7 +63,7 @@ def getClasses(program_name)
         # Add to end of array
         filteredClasses.push(getClass(classItem))
     end
-    
+
     return filteredClasses
 end
 
