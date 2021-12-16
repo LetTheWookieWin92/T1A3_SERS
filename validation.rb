@@ -4,12 +4,12 @@ def validate_option_selection(user_input, options_count)
     # Removes new line character
     user_input = user_input.chomp
 
+    # Trim any whitespace
+    user_input = user_input.strip
+
     if user_input.eql? "exit"
         return "exit"
     else
-                # Trim any whitespace
-        user_input = user_input.strip
-
         # Converts string input to integer
         user_input = user_input.to_i
 
@@ -17,6 +17,7 @@ def validate_option_selection(user_input, options_count)
         if user_input.between?(1,options_count)
             return user_input
         else
+            # Returning a 0 will signal a validation failure
             return 0
         end
     end
