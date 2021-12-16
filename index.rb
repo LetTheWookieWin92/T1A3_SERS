@@ -10,9 +10,8 @@ system 'clear'
 displayMode = "Home" 
 
 # Different menus have different numbers of options, this hash provides a means to look up how many options there are (DRY-er than keeping track of it throughout the script)
-availableOptions = { "Home" => 2,  "Program Selection - Class Lists" => 5 }
-
-programs = 
+availableOptions = { "Home" => 2,  "Program Selection - Class Lists" => 5 , "Program classes" => 1}
+programs = ["Psychology", "Science", "Engineering", "Business"]
 
 input = ""
 
@@ -54,10 +53,10 @@ while input != "exit"
                     puts "SERS > Class lists"
                     puts "Please select a program to display available classes"
                     puts
-                    puts "[1] Pychology"
-                    puts "[2] Science"
-                    puts "[3] Engineering"
-                    puts "[4] Business"
+                    puts "[1] #{programs[0]}"
+                    puts "[2] #{programs[1]}"
+                    puts "[3] #{programs[2]}"
+                    puts "[4] #{programs[3]}"
                     puts "[5] Go back"
                     puts
 
@@ -84,30 +83,37 @@ while input != "exit"
                     puts "SERS > Class lists"
                     puts "Please select a program to display available classes"
                     puts
-                    puts "[1] Pychology"
-                    puts "[2] Science"
-                    puts "[3] Engineering"
-                    puts "[4] Business"
+                    puts "[1] #{programs[0]}"
+                    puts "[2] #{programs[1]}"
+                    puts "[3] #{programs[2]}"
+                    puts "[4] #{programs[3]}"
                     puts "[5] Go back"
                     puts
                     puts "Invalid option. Please enter one of the numerical options above"                    
-                
-                when 1
+                # If user selects any of the four option of program
+                when 1..4
                     system 'clear'
-                   
-                    puts "SERS > Class lists > Psychology"
-                    puts "The following Psychology classes are available. Select one to view the class list"
+                    
+                    puts "SERS > Class lists > #{programs[input-1]}"
+                    puts "The following #{programs[input-1]} classes are available:"
                     puts  
 
-                    classes = getClasses("Psychology")
+                    # Get all classes for the specified program
+                    classes = getClasses(programs[input-1])
+                    
+                    # List each unit's code, name and occupant count
                     optionNumber = 1
                     classes.each do |classItem| 
-                        
-                        puts "[" + optionNumber.to_s + "] " + classItem["code"] + " " + classItem["name"] + " (Occupants: " + classItem["occupants"].count.to_s + "/20)"
+                        puts classItem["code"] + " " + classItem["name"] + " (Occupants: " + classItem["occupants"].count.to_s + "/20)"
                         optionNumber = optionNumber + 1
                     end
 
-                    input = ""
+                    puts
+                    puts  "Press any key to go back"
+                    puts
+
+                    
+                    availableOptions["Program classes"] = classes.count+1
                     displayMode = "Program classes"
 
                 # Go back
@@ -132,17 +138,30 @@ while input != "exit"
                     puts "SERS > Class lists"
                     puts "Please select a program to display available classes"
                     puts
-                    puts "[1] Pychology"
-                    puts "[2] Science"
-                    puts "[3] Engineering"
-                    puts "[4] Business"
+                    puts "[1] #{programs[0]}"
+                    puts "[2] #{programs[1]}"
+                    puts "[3] #{programs[2]}"
+                    puts "[4] #{programs[3]}"
                     puts "[5] Go back"
                     puts
             end
-            
+        when "Program classes"
+
+            system 'clear'
+            input = ""
+            displayMode = "Program Selection - Class Lists"
+
+            puts "SERS > Class lists"
+            puts "Please select a program to display available classes"
+            puts
+            puts "[1] #{programs[0]}"
+            puts "[2] #{programs[1]}"
+            puts "[3] #{programs[2]}"
+            puts "[4] #{programs[3]}"
+            puts "[5] Go back"
+            puts
 
     end
-
 
 
     # Get user input
