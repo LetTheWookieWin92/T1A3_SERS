@@ -3,8 +3,8 @@
     "SID": "13245",
     "name": "Barney Stinson",
     "enrolment": [
-      "PSYC3849",
-      "PSYC1829"
+      "PSYC1272",
+      "PSYC1456"
     ],
     "program": "Psychology"
   },
@@ -12,7 +12,8 @@
     "SID": "54862",
     "name": "Ted Mosby",
     "enrolment": [
-      "SCIE3086"
+      "BIOL4291", 
+      "BIOL2539"
     ],
     "program": "Science"
   },
@@ -20,8 +21,9 @@
     "SID": "86735",
     "name": "Lily Aldrin",
     "enrolment": [
-      "ENGI5364",
-      "ENGI1923"
+      "ENGI1001",
+      "ENGI3745",
+      "ENGI1023"
     ],
     "program": "Engineering"
   },
@@ -40,7 +42,10 @@
     "SID": "38567",
     "name": "Marshall Eriksen",
     "enrolment": [
-      "ENGI5364"
+        "ENGI1001",
+        "ENGI3745",
+        "ENGI1023",
+        "ENGI1005"
     ],
     "program": "Engineering"
   }

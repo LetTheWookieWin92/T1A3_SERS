@@ -96,3 +96,7 @@ def getPrograms()
     # Returns all programs
     return programsHash
 end 
+
+def openStudentProfile(student)
+
+end

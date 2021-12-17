@@ -1,5 +1,6 @@
 # Ruby gems
 require 'json'
+require 'colorize'
 
 
 require_relative './methods.rb'
@@ -30,7 +31,7 @@ while input != "exit"
                 when 0 
                     system 'clear'
                     # Prints the welcome message
-                    puts "Welcome to the Student Enrolment System (SERS)"
+                    puts "Welcome to the Student Enrolment System" + " (" + "SERS".colorize(:green) + ")"
                     puts "This application allows you to view and amend the enrolment status of any student at the institution, as well as the current occupancy of any available classes."
                     puts
                     puts "What would you like to do? Use your numerical keys to select an option"
@@ -46,7 +47,7 @@ while input != "exit"
                     input = ""
                     displayMode = "Program Selection - Student Search"
 
-                    puts "SERS > Student Search"
+                    puts "SERS".colorize(:green) + " > Student Search"
                     puts "Please select a program to display its students"
                     puts
                     puts "[1] #{programs[0]}"
@@ -62,7 +63,7 @@ while input != "exit"
                     input = ""
                     displayMode = "Program Selection - Class Lists"
 
-                    puts "SERS > Class lists"
+                    puts "SERS".colorize(:green) + " > Class lists"
                     puts "Please select a program to display available classes"
                     puts
                     puts "[1] #{programs[0]}"
@@ -76,7 +77,7 @@ while input != "exit"
                 else
                     system 'clear'
                     # Prints the welcome message
-                    puts "Welcome to the Student Enrolment System (SERS)"
+                    puts "Welcome to the Student Enrolment System" + " (" + "SERS".colorize(:green) + ")"
                     puts "This application allows you to view and amend the enrolment status of any student at the institution, as well as the current occupancy of any available classes."
                     puts
                     puts "What would you like to do? Use your numerical keys to select an option"
@@ -92,7 +93,7 @@ while input != "exit"
                 when 0 
                     system 'clear'
 
-                    puts "SERS > Class lists"
+                    puts "SERS".colorize(:green) + " > Class lists"
                     puts "Please select a program to display available classes"
                     puts
                     puts "[1] #{programs[0]}"
@@ -106,7 +107,7 @@ while input != "exit"
                 when 1..4
                     system 'clear'
                     
-                    puts "SERS > Class lists > #{programs[input-1]}"
+                    puts "SERS".colorize(:green) + " > Class lists > #{programs[input-1]}"
                     puts "The following #{programs[input-1]} classes are available:"
                     puts  
 
@@ -134,7 +135,7 @@ while input != "exit"
                     input = ""
                     displayMode = "Home"
 
-                    puts "Welcome to the Student Enrolment System (SERS)"
+                    puts "Welcome to the Student Enrolment System" + " (" + "SERS".colorize(:green) + ")"
                     puts "This application allows you to view and amend the enrolment status of any student at the institution, as well as the current occupancy of any available classes."
                     puts
                     puts "What would you like to do? Use your numerical keys to select an option"
@@ -147,7 +148,7 @@ while input != "exit"
                 else
                     system 'clear'
 
-                    puts "SERS > Class lists"
+                    puts "SERS".colorize(:green) + " > Class lists"
                     puts "Please select a program to display available classes"
                     puts
                     puts "[1] #{programs[0]}"
@@ -163,7 +164,7 @@ while input != "exit"
             input = ""
             displayMode = "Program Selection - Class Lists"
 
-            puts "SERS > Class lists"
+            puts "SERS".colorize(:green) + " > Class lists"
             puts "Please select a program to display available classes"
             puts
             puts "[1] #{programs[0]}"
@@ -181,7 +182,7 @@ while input != "exit"
                     input = ""
                     displayMode = "Program Selection - Student Search"
 
-                    puts "SERS > Student Search"
+                    puts "SERS".colorize(:green) + " > Student Search"
                     puts "Please select a program to display its students"
                     puts
                     puts "[1] #{programs[0]}"
@@ -195,9 +196,9 @@ while input != "exit"
                 when 1..4
                     system 'clear'
                     
-                    puts "SERS > Student Search > #{programs[input-1]}"
+                    puts "SERS".colorize(:green) + " > Student Search > #{programs[input-1]}"
                     puts "The following students study #{programs[input-1]}:"
-                    puts  
+                    puts
                     
                     # Get all students for the specified program
                     students = getStudents(programs[input-1])
@@ -223,7 +224,7 @@ while input != "exit"
                     input = ""
                     displayMode = "Home"
 
-                    puts "Welcome to the Student Enrolment System (SERS)"
+                    puts "Welcome to the Student Enrolment System" + " (" + "SERS".colorize(:green) + ")"
                     puts "This application allows you to view and amend the enrolment status of any student at the institution, as well as the current occupancy of any available classes."
                     puts
                     puts "What would you like to do? Use your numerical keys to select an option"
@@ -236,7 +237,7 @@ while input != "exit"
                 else
                     system 'clear'
 
-                    puts "SERS > Student Search"
+                    puts "SERS".colorize(:green) + " > Student Search"
                     puts "Please select a program to display its students"
                     puts
                     puts "[1] #{programs[0]}"
@@ -252,7 +253,7 @@ while input != "exit"
             input = ""
             displayMode = "Program Selection - Student Search"
 
-            puts "SERS > Student Search"
+            puts "SERS".colorize(:green) + " > Student Search"
             puts "Please select a program to display its students"
             puts
             puts "[1] #{programs[0]}"

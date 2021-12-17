@@ -2,13 +2,13 @@
     {
         "code": "PSYC1272",
         "name": "Social Psychology",
-        "occupants": [],
+        "occupants": ["13245"],
         "program": "Psychology"
     },
     {
         "code": "PSYC1456",
         "name": "Personality and Social Psychology",
-        "occupants": [],
+        "occupants": ["13245"],
         "program": "Psychology"
     },
     {
@@ -56,13 +56,13 @@
     {
         "code": "BIOL4291",
         "name": "From Molecules to Ecosystems",
-        "occupants": [],
+        "occupants": ["54862"],
         "program": "Science"
     },
     {
         "code": "BIOL2539",
         "name": "Botany",
-        "occupants": [],
+        "occupants": ["54862"],
         "program": "Science"
     },
     {
@@ -86,25 +86,25 @@
     {
         "code": "ENGI1001",
         "name": "Introduction to Programming",
-        "occupants": [],
+        "occupants": ["86735","38567"],
         "program": "Engineering"
     },
     {
         "code": "ENGI3745",
         "name": "Introduction to Engineering Computing",
-        "occupants": [],
+        "occupants": ["86735","38567"],
         "program": "Engineering"
     },
     {
         "code": "ENGI1023",
         "name": "Linear Algebra",
-        "occupants": [],
+        "occupants": ["86735","38567"],
         "program": "Engineering"
     },
     {
         "code": "ENGI1005",
         "name": "Statistical Thinking with Data",
-        "occupants": [],
+        "occupants": ["38567"],
         "program": "Engineering"
     },
     {
