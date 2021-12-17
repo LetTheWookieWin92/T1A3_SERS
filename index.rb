@@ -2,7 +2,6 @@
 require 'json'
 require 'colorize'
 
-
 require_relative './methods.rb'
 require_relative './validation.rb'
 
@@ -117,7 +116,7 @@ while input != "exit"
                     # List each unit's code, name and occupant count
                     optionNumber = 1
                     classes.each do |classItem| 
-                        puts classItem["code"] + " " + classItem["name"] + " (Occupants: " + classItem["occupants"].count.to_s + "/20)"
+                        puts classItem["code"] + " " + classItem["name"] + " (Occupants: " + classItem["occupants"].count.to_s + "/" + classItem["capacity"] + ")"
                         optionNumber = optionNumber + 1
                     end
 

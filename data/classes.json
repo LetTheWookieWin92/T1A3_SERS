@@ -3,157 +3,183 @@
         "code": "PSYC1272",
         "name": "Social Psychology",
         "occupants": ["13245"],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC1456",
         "name": "Personality and Social Psychology",
         "occupants": ["13245"],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC5749",
         "name": "Perceptual Systems",
         "occupants": [],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC1976",
         "name": "Perception, Cognition, and Intelligence",
         "occupants": [],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC3456",
         "name": "Brain and Behavioural Psychology",
         "occupants": [],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC3452",
         "name": "Applied Psychology",
         "occupants": [],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "PSYC6943",
         "name": "Advanced Statistics for Psychology",
         "occupants": [],
-        "program": "Psychology"
+        "program": "Psychology",
+        "capacity": "20"
     },
     {
         "code": "BIOL3467",
         "name": "Life and Evolution",
         "occupants": [],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL1839",
         "name": "Human Biology",
         "occupants": [],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL4291",
         "name": "From Molecules to Ecosystems",
         "occupants": ["54862"],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL2539",
         "name": "Botany",
         "occupants": ["54862"],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL3945",
         "name": "Zoology",
         "occupants": [],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL3453",
         "name": "Comparative Primate Anatomy",
         "occupants": [],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "BIOL2567",
         "name": "Biology of Insects",
         "occupants": [],
-        "program": "Science"
+        "program": "Science",
+        "capacity": "20"
     },
     {
         "code": "ENGI1001",
         "name": "Introduction to Programming",
         "occupants": ["86735","38567"],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI3745",
         "name": "Introduction to Engineering Computing",
         "occupants": ["86735","38567"],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI1023",
         "name": "Linear Algebra",
         "occupants": ["86735","38567"],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI1005",
         "name": "Statistical Thinking with Data",
         "occupants": ["38567"],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI1002",
         "name": "Multivariable Calculus and Modelling",
         "occupants": [],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI1113",
         "name": "Object-oriented Programming",
         "occupants": [],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "ENGI2123",
         "name": "Data Structures and Algorithms",
         "occupants": [],
-        "program": "Engineering"
+        "program": "Engineering",
+        "capacity": "20"
     },
     {
         "code": "BUSI1030",
         "name": "Accounting, Business and Society",
         "occupants": [],
-        "program": "Business"
+        "program": "Business",
+        "capacity": "20"
     },
     {
         "code": "BUSI1006",
         "name": "Accounting and Financial Management",
         "occupants": [],
-        "program": "Business"
+        "program": "Business",
+        "capacity": "20"
     },
     {
         "code": "BUSI2011",
         "name": "Financial Accounting",
         "occupants": [],
-        "program": "Business"
+        "program": "Business",
+        "capacity": "20"
     },
     {
         "code": "BUSI3013",
         "name": "Financial Statement Analysis",
         "occupants": [],
-        "program": "Business"
+        "program": "Business",
+        "capacity": "20"
     },
     {
         "code": "BUSI3201",
         "name": "Australian Taxation System",
         "occupants": [],
-        "program": "Business"
+        "program": "Business",
+        "capacity": "20"
     }   
 ]
 
