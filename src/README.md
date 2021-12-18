@@ -76,6 +76,8 @@ The user will be prompted on how to use each feature below as follows:
 
 ### Control Flow
 
+This application uses a complex control loop to deliver the interface
+
 <img src="../Screenshots/Control flow.png" alt="Control flow" width="500"/>
 
 <br>
@@ -85,11 +87,33 @@ The user will be prompted on how to use each feature below as follows:
 This project was planned and implemented using Trello, a project management workspace. The workspace for this project can be found <a href="https://trello.com/invite/b/fOSkJ9sx/25a0cdee1b504047b73bdd3d462c7fc0/t1a3-terminal-application">here</a>.
 
 <br>
-**Insert screenshots**
+<img src="../Screenshots/20211215 at 2039.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211216 at 1300.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211216 at 1531.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211216 at 1811.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211216 at 1907.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211217 at 1545.png" alt="Control flow" width="300"/>
+<img src="../Screenshots/20211218 at 2004.png" alt="Control flow" width="300"/>
 
 <br>
 
 ## User Help Documentation
+
+**Overview**
+
+The purpose of this application is to enable staff members at educational institutions to view the enrolment status of students and classes, depending on the specified program of study.
+
+**Navigation**
+
+The user can navigate the application using the numerical keys on their keyboard to navigate the interface prompts. All menus have instructions for how to go back and the application can be closed by typing 'exit'
+
+**Viewing student enrolment**
+
+Upon launching the application, the user can select 'Search for students', which will display the program options. Selecting a program option will display all of the students who are on that program of study.
+
+**Viewing class lists**
+
+Upon launching the application, the user can select 'View the class lists', which will display the program options. Selecting a program option will display all of the classes for that program of study, and their current occupancy.
 
 <br>
 
